@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Handle Next.js static export - all routes should work with SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { AdminProvider } from './admin-context'
 import './globals.css'
 
@@ -49,7 +48,6 @@ export default function RootLayout({
         <AdminProvider>
           {children}
         </AdminProvider>
-        <Analytics />
       </body>
     </html>
   )
